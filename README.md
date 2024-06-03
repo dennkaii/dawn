@@ -1,5 +1,7 @@
 # dawn
 
+testing here
+
 <p align="center">
   <img src="https://i.imgur.com/vjfMONS.png">
 </div>
@@ -28,8 +30,8 @@ To disable a component, put their name into the list of `disabled` components:
 
 ```js
 const CONFIG = new Config({
-    // ...
-    disabled: ['todo-list'] // search-bar, crypto-rate, current-time, weather-forecast, status-bar
+  // ...
+  disabled: ["todo-list"], // search-bar, crypto-rate, current-time, weather-forecast, status-bar
 });
 ```
 
@@ -71,11 +73,11 @@ Config example (`userconfig.js`):
 const CONFIG = new Config({
   // ...
   clock: {
-    format: 'h:i p',        // 13:30 PM
+    format: "h:i p", // 13:30 PM
     // format: 'do B Y - h:i', // 18th January 2021 - 13:30
     // format: 'h:i - m/b/Y',  // 13:30 - 3/Jul/2021
-    iconColor: 'grey'
-  }
+    iconColor: "grey",
+  },
 });
 ```
 
@@ -87,9 +89,9 @@ Change your location and temperature scale (celius, fahrenheit) like such:
 const CONFIG = new Config({
   // ...
   temperature: {
-    location: 'New York',
-    scale: 'C'
-  }
+    location: "New York",
+    scale: "C",
+  },
 });
 ```
 
@@ -103,9 +105,9 @@ For the live crypto status, provide a crypto coin and a FIAT currency. Example:
 const CONFIG = new Config({
   // ...
   crypto: {
-    coin: 'ETH', // BTC, LINK, DOGE etc
-    currency: 'USD', // EUR, JPY, BRL etc
-    refreshIn: 15 // refresh time (in seconds)
+    coin: "ETH", // BTC, LINK, DOGE etc
+    currency: "USD", // EUR, JPY, BRL etc
+    refreshIn: 15, // refresh time (in seconds)
   },
 });
 ```
@@ -118,45 +120,45 @@ Alternatively, click on the crypto widget to change the settings:
 
 ## Features/TODO
 
-  - [X] Status bar
-    - [X] Clock/Date
-    - [X] Live crypto
-    - [X] Current weather
-      - [X] `REFACTOR` Show weather location on hover
-    - [ ] `MAYBE` RSS reader
-  - [X] Quick search panel
-  - [ ] Todo/schedule panel
-    - [X] Reordering
-    - [X] Task priority
-    - [ ] Task reminder
-      - [ ] `MAYBE` Sync todo with google calendar
-    - [X] Link to external URL
-    - [X] Filter by task status (TODO/DONE)
-    - [ ] Sort by creation date
-    - [ ] Sort by task priority
-    - [X] Clean all tasks button
-    - [X] Edit task button
-    - [ ] `MAYBE` Subtasks w/ progress bar
-    - [ ] `MAYBE` Subsections for todo DEADLINE ("today", "upcoming")
-  - [ ] Tabs/Links section
-    - [ ] Show link domain on hover
-    - [ ] Category styles (compact, icon, full)
-    - [ ] Add "create new tab" button
-    - [X] Add link icon
-    - [ ] Drag/drop reorganize
-  - [ ] Crypto section
-    - [ ] Load top 10 coins and currencies via API
-  - [ ] Configuration
-    - [X] Disable components
-    - [ ] Toggle status bar sections
-    - [X] Open last visited panel on new tab
-    - [ ] Reset settings to default
-    - [X] Change keybindings
-    - [ ] Import/export settings
-    - [ ] Randomize banner gifs
-    - [ ] Status bar tab indicator (roman numerals, hiragana, numbers)
-    - [ ] Colorscheme manipulation
-    - [ ] `MAYBE` Optional sound fx
-  - [ ] Create favicon
-  - [ ] Keybinding cheatsheet
-  - [ ] Verify updates on startup
+- [x] Status bar
+  - [x] Clock/Date
+  - [x] Live crypto
+  - [x] Current weather
+    - [x] `REFACTOR` Show weather location on hover
+  - [ ] `MAYBE` RSS reader
+- [x] Quick search panel
+- [ ] Todo/schedule panel
+  - [x] Reordering
+  - [x] Task priority
+  - [ ] Task reminder
+    - [ ] `MAYBE` Sync todo with google calendar
+  - [x] Link to external URL
+  - [x] Filter by task status (TODO/DONE)
+  - [ ] Sort by creation date
+  - [ ] Sort by task priority
+  - [x] Clean all tasks button
+  - [x] Edit task button
+  - [ ] `MAYBE` Subtasks w/ progress bar
+  - [ ] `MAYBE` Subsections for todo DEADLINE ("today", "upcoming")
+- [ ] Tabs/Links section
+  - [ ] Show link domain on hover
+  - [ ] Category styles (compact, icon, full)
+  - [ ] Add "create new tab" button
+  - [x] Add link icon
+  - [ ] Drag/drop reorganize
+- [ ] Crypto section
+  - [ ] Load top 10 coins and currencies via API
+- [ ] Configuration
+  - [x] Disable components
+  - [ ] Toggle status bar sections
+  - [x] Open last visited panel on new tab
+  - [ ] Reset settings to default
+  - [x] Change keybindings
+  - [ ] Import/export settings
+  - [ ] Randomize banner gifs
+  - [ ] Status bar tab indicator (roman numerals, hiragana, numbers)
+  - [ ] Colorscheme manipulation
+  - [ ] `MAYBE` Optional sound fx
+- [ ] Create favicon
+- [ ] Keybinding cheatsheet
+- [ ] Verify updates on startup
