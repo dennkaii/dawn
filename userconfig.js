@@ -1,25 +1,20 @@
 const CONFIG = new Config({
-  crypto: {
-    coin: 'ETH',
-    currency: 'USD',
-    refreshIn: 10
-  },
   overrideStorage: true, // override localStorage with fixed userconfig values
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'Santo Domingo, Dominican Republic',
     scale: 'C'
   },
-  clock: {
+ clock: {
     format: 'h:i p',
     iconColor: '#ff7b95'
   },
   search: {
     engines: {
       g: ['https://google.com/search?q=', 'Google'],
-      i: ['https://ixquick.com/do/search?q=', 'Ixquick'],
       d: ['https://duckduckgo.com/html?q=', 'DuckDuckGo'],
       y: ['https://youtube.com/results?search_query=', 'Youtube'],
-      w: ['https://en.wikipedia.org/w/index.php?search=', 'Wikipedia']
+      r: ["https://www.reddit.com/search/?q=", "Reddit"],
+      p: ["https://www.pinterest.es/search/pins/?q=", "Pinterest"],
     }
   },
   keybindings: {
