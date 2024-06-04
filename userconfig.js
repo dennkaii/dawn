@@ -18,7 +18,6 @@ const CONFIG = new Config({
     }
   },
   keybindings: {
-    "t": 'todo-list',
     "s": 'search-bar'
   },
   disabled: [],
