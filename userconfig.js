@@ -124,7 +124,7 @@ const CONFIG = new Config({
           name: 'misc',
           links: [
            {
-             name: 'zig wiki',
+             name: 'Zig Wiki',
              url:'https://ziglang.org/documentation/0.12.0/', 
            }
          ]
