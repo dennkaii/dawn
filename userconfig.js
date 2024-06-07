@@ -74,6 +74,7 @@ const CONFIG = new Config({
         name: 'Music',
         links: [
           {
+            name: 'tidal',
             url: 'https://listen.tidal.com/',
             icon: 'brand-tidal',
           }
@@ -86,6 +87,8 @@ const CONFIG = new Config({
       background_url: 'src/img/banners/bg-2.gif',
       categories: [
         {
+
+          
           name: ' Nix - Related',
           links: [
           {
@@ -96,9 +99,9 @@ const CONFIG = new Config({
           {
             name: 'Home Manager',
             url: 'https://home-manager-options.extranix.com/'
-          }
-          
+          },
         ],
+        },{
           name: 'subreddits',
           links: [
             {
@@ -117,17 +120,7 @@ const CONFIG = new Config({
             }
           ]
         },
-        {
-          name: 'blogs',
-          links: [
-          
-            {
-              name: 'dev.to',
-              url: 'https://dev.to'
-            },
-                    ]
-        },
-        {
+         {
           name: 'misc',
           links: [
             {
