@@ -5,7 +5,7 @@ class Statusbar extends Component {
     categories: '.categories ul',
     tabs: '#tabs ul li',
     indicator: '.indicator',
-    addTab: '.add-tab'
+    fastlink: '.fastlink'
   };
 
   modal;
@@ -149,7 +149,7 @@ class Statusbar extends Component {
 
       #tabs > cols {
           position: relative;
-          grid-template-columns: [add-tab] 35px [tabs] auto [widgets] auto;
+          grid-template-columns: [chat-tab] 35px [tabs] auto [widgets] auto;
       }
 
       #tabs .time span {
@@ -170,21 +170,20 @@ class Statusbar extends Component {
           background: rgb(255 255 255 / 10%);
       }
 
-      .add-tab {
+      fastlink {
           border: 0;
-          background: #282830;
-          color: #9898a5;
+          background: #32302f;
+          color: #a9b665;
           cursor: pointer;
           border-radius: 5px 15px 15px 5px;
       }
 
-      .add-tab:hover {
+      .fastlink:hover {
           filter: brightness(1.2);
       }
 
-      .add-tab-icon {
-          font-size: 12pt;
-          font-weight: bold;
+      .fastlink-icon {
+	      width: 70%;
       }
     `;
   }
@@ -193,8 +192,8 @@ class Statusbar extends Component {
     return `
         <div id="tabs">
             <cols>
-                <button class="+ add-tab">
-                  <span class="material-icons add-tab-icon">add</span>
+                <button class="+ fastlink">
+                 <img class="fastlink-icon" src="src/img/chat-gpt.svg"/>
                 </button>
                 <ul class="- indicator"></ul>
                 <div class="+ widgets col-end">
@@ -207,6 +206,13 @@ class Statusbar extends Component {
 
   setEvents() {
     // this.refs.addTab.onclick = () => this.addNewTab();
+
+     this.refs.fastlink.onclick = () => {
+      console.log(CONFIG.fastlink);
+      if (CONFIG.config.fastlink) {
+        window.location.href = CONFIG.config.fastlink;
+      }
+    }
 
     this.refs.tabs.forEach(tab =>
       tab.onclick = ({ target }) => this.handleTabChange(target));

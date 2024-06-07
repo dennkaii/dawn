@@ -21,133 +21,86 @@ const CONFIG = new Config({
     "s": 'search-bar'
   },
   disabled: [],
+  fastlink: "https://chat.openai.com/",
   openLastVisitedTab: false,
   tabs: [
     {
-      name: 'boards',
+      name: 'chi ll',
       background_url: 'src/img/banners/bg-1.gif',
       categories: [{
-        name: 'fun',
+        name: 'Social Media',
         links: [
           {
-            url: 'https://4chan.org/wsg/',
-            name: '/wsg/'
+            name: "whatsapp",
+            url: "https://web.whatsapp.com/",
+            icon: "brand-whatsapp",
           },
           {
-            name: '/out/',
-            url: 'https://4chan.org/out',
-            icon: 'leaf',
+            name: "reddit",
+            url: "https://www.reddit.com/",
+            icon: "brand-reddit",
             icon_color: '#64876d'
           },
           {
-            name: '/lit/',
-            url: 'https://4chan.org/lit/',
-            icon: 'book'
+            name: "youtube",
+            url: "https://www.youtube.com/",
+            icon: "brand-youtube-filled",
           },
           {
-            name: '/v/',
-            url: 'https://4chan.org/v/',
-            icon: 'device-gamepad',
-            icon_color: '#8b647b'
-          },
-          {
-            name: '/p/',
-            url: 'https://4chan.org/p/',
-            icon: 'camera'
+             name: "twitch",
+            url: "https://www.twitch.tv/",
+            icon: "brand-twitch",
           }
         ]
       },
       {
-        name: 'Comfy',
+        name: 'Games',
         links: [
-          {
-            name: '/lounge/',
-            url: 'https://sushigirl.us/lounge/catalog.html'
+        {
+            name: "chess",
+            url: "https://www.chess.com/home",
+            icon: "chess-queen-filled",
+            icon_color: "#a9b665",
           },
           {
-            name: '/comfy/',
-            url: 'https://anon.cafe/comfy/catalog.html'
-          }
+            name: "monkeytype",
+            url: "https://monkeytype.com/",
+            icon: "keyboard",
+            icon_color: "#e78a4e",
+          },
         ]
       },
       {
-        name: 'Technology',
+        name: 'Music',
         links: [
           {
-            name: '/g/',
-            url: 'https://4chan.org/g/',
-          },
-          {
-            name: '/Δ/',
-            url: 'https://archive.arisuchan.jp/%CE%94/catalog.html'
-          },
-          {
-            name: '/λ/',
-            url: 'https://www.lainchan.org/%CE%BB/catalog.html'
-          },
-          {
-            name: '/sec/',
-            url: 'https://www.lainchan.org/sec/catalog.html'
-          },
-          {
-            name: '/prog/',
-            url: 'https://boards.420chan.org/prog/',
-            icon: 'code'
+            url: 'https://listen.tidal.com/',
+            icon: 'brand-tidal',
           }
         ]
       }
       ]
     },
-    {
-      name: 'music',
+      {
+      name: 'Dev',
       background_url: 'src/img/banners/bg-2.gif',
       categories: [
         {
-          name: 'music services',
+          name: ' Nix - Related',
           links: [
-            {
-              url: 'https://soundcloud.com/',
-              icon: 'brand-soundcloud',
-              icon_color: '#c57750'
-            },
-            {
-              url: 'https://youtu.be/',
-              icon: 'brand-youtube',
-              icon_color: '#996767'
-            },
-            {
-              url: 'https://r-a-d.io/',
-              icon: 'radio'
-            },
-          ]
-        },
-        {
-          name: 'music boards',
-          links: [
-            {
-              name: '/music/',
-              url: 'https://lainchan.org/music/',
-              icon: 'disc'
-            },
-            {
-              name: '/mu/',
-              url: 'https://boards.4channel.org/mu/',
-            }
-          ]
-        }
-      ]
-    },
-    {
-      name: 'tech',
-      background_url: 'src/img/banners/bg-3.gif',
-      categories: [
-        {
+          {
+            name: 'Nix Search',
+            url:'https://search.nixos.org/packages',
+            
+          },
+          {
+            name: 'Home Manager',
+            url: 'https://home-manager-options.extranix.com/'
+          }
+          
+        ],
           name: 'subreddits',
           links: [
-            {
-              name: 'r/startpages/',
-              url: 'https://www.reddit.com/r/startpages/'
-            },
             {
               name: 'r/unixporn',
               url: 'https://www.reddit.com/r/unixporn/'
@@ -167,20 +120,12 @@ const CONFIG = new Config({
         {
           name: 'blogs',
           links: [
-            {
-              name: 'fasterthanli',
-              url: 'https://fasterthanli.me/articles',
-              icon: 'anchor'
-            },
+          
             {
               name: 'dev.to',
               url: 'https://dev.to'
             },
-            {
-              name: 'mataroa.blog',
-              url: 'https://collection.mataroa.blog',
-            }
-          ]
+                    ]
         },
         {
           name: 'misc',
@@ -191,12 +136,10 @@ const CONFIG = new Config({
               icon: 'mailbox'
             },
             {
-              name: 'rust docs',
-              url: 'https://doc.rust-lang.org/book/',
-              icon: 'notebook',
-              icon_color: '#977a3a'
+             name: 'zig wiki',
+             url:'https://ziglang.org/documentation/0.12.0/', 
             }
-          ]
+                     ]
         }
       ]
     }]
