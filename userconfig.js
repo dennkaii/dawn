@@ -31,23 +31,23 @@ const CONFIG = new Config({
         name: 'Social Media',
         links: [
           {
-            name: "whatsapp",
+            name: "Whatsapp",
             url: "https://web.whatsapp.com/",
             icon: "brand-whatsapp",
           },
           {
-            name: "reddit",
+            name: "Reddit",
             url: "https://www.reddit.com/",
             icon: "brand-reddit",
             icon_color: '#64876d'
           },
           {
-            name: "youtube",
+            name: "Youtube",
             url: "https://www.youtube.com/",
             icon: "brand-youtube-filled",
           },
           {
-             name: "twitch",
+             name: "Twitch",
             url: "https://www.twitch.tv/",
             icon: "brand-twitch",
           }
@@ -57,13 +57,13 @@ const CONFIG = new Config({
         name: 'Games',
         links: [
         {
-            name: "chess",
+            name: "Chess",
             url: "https://www.chess.com/home",
             icon: "chess-queen-filled",
             icon_color: "#a9b665",
           },
           {
-            name: "monkeytype",
+            name: "Monkeytype",
             url: "https://monkeytype.com/",
             icon: "keyboard",
             icon_color: "#e78a4e",
@@ -74,7 +74,7 @@ const CONFIG = new Config({
         name: 'Music',
         links: [
           {
-            name: 'tidal',
+            name: 'Tidal',
             url: 'https://listen.tidal.com/',
             icon: 'brand-tidal',
           }
@@ -123,16 +123,11 @@ const CONFIG = new Config({
          {
           name: 'misc',
           links: [
-            {
-              name: 'post office',
-              url: 'http://afternoon.dynu.com/letterbox.html',
-              icon: 'mailbox'
-            },
-            {
+           {
              name: 'zig wiki',
              url:'https://ziglang.org/documentation/0.12.0/', 
-            }
-                     ]
+           }
+         ]
         }
       ]
     }]
