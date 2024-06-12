@@ -109,7 +109,7 @@ const CONFIG = new Config({
               url: 'https://www.reddit.com/r/unixporn/'
             },
             {
-              name: 'r/mechkbds/',
+              name: 'r/mechkbds',
               url: 'https://www.reddit.com/r/MechanicalKeyboards/',
               icon: 'keyboard',
               icon_color: '#a57685'
@@ -126,7 +126,12 @@ const CONFIG = new Config({
            {
              name: 'Zig Wiki',
              url:'https://ziglang.org/documentation/0.12.0/', 
-           }
+           },
+           {
+           name: 'Github',
+           url: 'https://github.com/',
+           icon: 'brand-github'
+         }
          ]
         }
       ]
